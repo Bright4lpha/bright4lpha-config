@@ -1,20 +1,10 @@
 export default {
-    extends: ["@commitlint/config-angular"],
+    extends: ['@commitlint/config-angular'],
     rules: {
-        "type-enum": [
+        'type-enum': [
             2,
-            "always",
-            [
-                "feat",
-                "fix",
-                "docs",
-                "style",
-                "refactor",
-                "perf",
-                "test",
-                "chore",
-                "revert",
-            ],
+            'always',
+            ['feat', 'fix', 'docs', 'style', 'refactor', 'perf', 'test', 'chore', 'revert'],
         ],
     },
 };
