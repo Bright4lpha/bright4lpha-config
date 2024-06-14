@@ -15,3 +15,5 @@ const printSum = (a: number, b: number) => {
 };
 
 export {sum, divide, printSum};
+
+// ajout tests
