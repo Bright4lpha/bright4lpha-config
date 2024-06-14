@@ -1,4 +1,4 @@
-const sum = (a, b) => {
+const sum = (a: number, b: number) => {
     if (a === 0) {
         return b;
     } else if (b === 0) {
@@ -8,9 +8,10 @@ const sum = (a, b) => {
     }
 };
 
-const divide = (a, b) => a / b;
+const divide = (a: number, b: number) => a / b;
 
-const printSum = (a, b) => {
-    debugger;
+const printSum = (a: number, b: number) => {
     console.log(`The sum of ${a} and ${b} is ${sum(a, b)}`);
 };
+
+export {sum, divide, printSum};
