@@ -1,10 +1,16 @@
-import js from '@eslint/js';
+import eslintJS from '@eslint/js';
+import tseslint from 'typescript-eslint';
+
 export default [
-    js.configs.recommended,
+    eslintJS.configs.recommended,
+    ...tseslint.configs.recommended,
+    ...tseslint.configs.strict,
+    ...tseslint.configs.stylistic,
     {
         name: 'eslint-config-bright4lpha',
         rules: {
             'no-console': 'warn', // allow, warn, error
+            'no-debugger': 'error',
         },
     },
     {
